@@ -1,0 +1,16 @@
+.Container {
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+}
+button{
+  width: 60px;
+}
