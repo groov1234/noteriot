@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 // import './notes.css';
 import NoteUpdate from './NoteUpdate';
-
+// import Remarkable from 'remarkable';
 import { connect } from 'react-redux';
 import { deleteNote } from '../actions';
+// import NoteForm from './NoteForm';
 
 class notes extends Component {
   constructor(props) {
@@ -29,7 +30,8 @@ class notes extends Component {
   };
 
   render() {
-    return <div className="Notes">
+    return (
+      <div className="Notes">
         <div className="Note-box">
           <div className="title">{this.props.note.title}</div>
           <div className="date">Date Added:{this.props.note.date}</div>
@@ -40,9 +42,12 @@ class notes extends Component {
           <button className="Delete" onClick={this.deleteNote}>
             Delete
           </button>
-          {this.state.update ? <NoteUpdate data={this.props.note} index={this.props.index} /> : null}
+          {this.state.update ? (
+            <NoteUpdate data={this.props.note} index={this.props.index} />
+          ) : null}
         </div>
-      </div>;
+        </div>
+    );
   }
 }
 

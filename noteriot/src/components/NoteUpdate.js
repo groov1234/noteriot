@@ -55,7 +55,7 @@ class UpdateNote extends Component {
           value={this.props.date}
           onChange={this.handleUpdate}
         />
-        <input
+        <textarea
           type="text"
           placeholder="text"
           name="text"

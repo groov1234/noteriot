@@ -8,7 +8,7 @@ import { postNote } from '../actions';
 import './NoteForm.css'
 // stretch goal quick implementation in attempt to add to form
 // add markdown feature later
-// import Remarkable from 'remarkable';
+// import Remarkable from 'remarkab
 // Create form for adding new notes
 // title/text + (additional) date input?
 class NoteForm extends Component {

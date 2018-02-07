@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import Notes from './components/Notes';
-import NoteForm from './components/NoteForm';
-import { getNotes } from './actions';
+import Notes from './Notes';
+import NoteForm from './NoteForm';
+import { getNotes } from '../actions';
 import { connect } from 'react-redux';
+import Navi from './Navi';
 
 
 class App extends Component {
@@ -13,18 +14,19 @@ class App extends Component {
 
   render() {
     return (
+      
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Note Riot</h1>
+          <Navi />
+          
         </header>
         <NoteForm />
         <div className="List">
-          {this.props.notesFetched ? (
-            this.props.notes.map((note, index) => {
+          {this.props.notesFetched ? (this.props.notes.map((note, index) => {
               return <Notes key={index} index={index} note={note} />;
             })
           ) : (
-            <img className="App-logo" alt="logo" />
+            <img className="App-Logo" alt="logo" />
           )}
         </div>
       </div>
