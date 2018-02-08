@@ -3,12 +3,9 @@ import { connect } from 'react-redux';
 import { postNote } from '../actions';
 // future addition
 // import Calendar from 'react-input-calendar';
-
 //import css
 import './NoteForm.css'
-// stretch goal quick implementation in attempt to add to form
 // add markdown feature later
-// import Remarkable from 'remarkab
 // Create form for adding new notes
 // title/text + (additional) date input?
 class NoteForm extends Component {
@@ -20,7 +17,7 @@ class NoteForm extends Component {
       text: '',
     };
   }
-
+ 
   addNote = event => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
@@ -53,14 +50,14 @@ class NoteForm extends Component {
             onChange={this.addNote}
           />
           <input
-            classtitle="date"
+            className="date"
             name="date"
             placeholder="date"
             value={this.state.date}
             onChange={this.addNote}
           />
           <textarea
-            classtitle="text"
+            className="text"
             name="text"
             placeholder="text"
             value={this.state.text}

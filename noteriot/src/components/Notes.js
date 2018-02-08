@@ -4,6 +4,7 @@ import NoteUpdate from './NoteUpdate';
 // import Remarkable from 'remarkable';
 import { connect } from 'react-redux';
 import { deleteNote } from '../actions';
+import './Notes.css'
 // import NoteForm from './NoteForm';
 
 class notes extends Component {
