@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Notes from './Notes';
 import { getNotes } from '../actions';
 import { connect } from 'react-redux';
+import './NoteDisplay.css';
 
 class NoteDisplay extends Component {
   componentDidMount() {

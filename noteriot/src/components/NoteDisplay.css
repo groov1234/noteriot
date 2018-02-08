@@ -1,3 +1,8 @@
 .note-container {
   align-self: center;
+  height: auto;
+}
+
+.display-list {
+  height: 1000px;
 }
