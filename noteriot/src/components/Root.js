@@ -25,7 +25,7 @@ const Root = ({ store }) => (
     <Router>
       <div className="container">
         <Navi />
-        <ul>
+        <ul className="route-links">
           <li>
             <Link to="/noteforms" exact="true">Add Note</Link>
           </li>

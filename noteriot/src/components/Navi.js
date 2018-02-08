@@ -4,12 +4,14 @@ class Navi extends Component {
   
   render() {
     return (
-      <nav className="nav-main">
-        <header className="nav-header">
+      <nav className="nav-header">
           <h2 className="nav-title" href="/">Note Riot</h2>
-          <button className="log-in">Log In</button>
-          <button className="log-out">Log Out</button>
-        </header>
+          <form className="sign-form">
+            <input type="text" placeholder="Username"/>
+            <input type="text" placeholder="password"/>
+          <button className="sign">Log In</button>
+          <button className="sign">Log Out</button>
+          </form>
       </nav>
     )
   }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // import actions
 import { updateNote } from '../actions';
+import './NoteForm.css';
 // create update method
 // use Friendform as template
 class UpdateNote extends Component {
@@ -56,13 +57,14 @@ class UpdateNote extends Component {
           onChange={this.handleUpdate}
         />
         <textarea
+          className="text"
           type="text"
           placeholder="text"
           name="text"
           value={this.props.text}
           onChange={this.handleUpdate}
         />
-        <button onClick={this.submitUpdate}>Save</button>
+        <button className="Save" onClick={this.submitUpdate}>Save</button>
       </form>
     );
   }
