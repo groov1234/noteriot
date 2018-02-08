@@ -14,19 +14,9 @@
 1. Edit button
 2. Delete button
 
-### WiP
-* Login Page
-1. Signup Form
-2. Login Form
+##### Extra Features to Add
 
-##### Extra Features
-
-###### Files Added to project
-* Navbar Tabs
-1. Add Page
-2. View Notes
-
-* Markdown (partially added) 
+* Markdown 
 
 * Checklist
 
@@ -36,6 +26,6 @@
 
 1. Create note with Title and Text
 2. Display List of notes
-3. Edit/Delete notes
-#### WiP
-4. Log in to view notes - WiP
+3. Edit
+4. Delete notes
+5. Log in to view notes - WiP - Buttons Created - Routing unfinished
