@@ -40,7 +40,7 @@ class NoteForm extends Component {
   };
   render() {
     return (
-      <div className="Form-bg">
+      <div className="form">
         <form className="Add-form">
           <input
             className="title"
@@ -60,6 +60,7 @@ class NoteForm extends Component {
             className="text"
             name="text"
             placeholder="text"
+            rows={10}
             value={this.state.text}
             onChange={this.addNote}
           />

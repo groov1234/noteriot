@@ -1,12 +1,3 @@
-.form {
-  width: 400px;
-}
-.Add-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
 textarea {
 	width: 100%;
   resize: none;
@@ -15,24 +6,15 @@ textarea {
 	font-family: Tahoma, sans-serif;
 }
 .title {
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   font-weight: bold;
 }
 
 .date {
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   font-weight: bold;
-}
-.Submit-button {
-  width: 25%;
-  text-align: center;
-  font-weight: bold;
-}
-
-.Save {
-  position: absolute;
 }

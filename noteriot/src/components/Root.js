@@ -5,7 +5,6 @@ import { BrowserRouter as Router,
   Link 
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
-// import App from './App';
 import NoteForm from './NoteForm';
 import Navi from './Navi';
 import NoteDisplay from './NoteDisplay';

@@ -8,7 +8,7 @@ class Navi extends Component {
           <h2 className="nav-title" href="/">Note Riot</h2>
           <form className="sign-form">
             <input type="text" placeholder="Username"/>
-            <input type="text" placeholder="password"/>
+            <input type="text" placeholder="Password"/>
           <button className="sign">Log In</button>
           <button className="sign">Log Out</button>
           </form>

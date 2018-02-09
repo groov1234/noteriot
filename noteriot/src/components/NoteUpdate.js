@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // import actions
 import { updateNote } from '../actions';
-import './NoteForm.css';
+import './NoteUpdate.css';
 // create update method
 // use Friendform as template
 class UpdateNote extends Component {
@@ -43,6 +43,7 @@ class UpdateNote extends Component {
     return (
       <form style={this.state.save ? { display: 'none' } : null}>
         <input
+          className="title"
           type="text"
           placeholder="title"
           name="title"
@@ -50,6 +51,7 @@ class UpdateNote extends Component {
           onChange={this.handleUpdate}
         />
         <input
+          className="date"
           type="text"
           placeholder="date"
           name="date"
@@ -57,6 +59,7 @@ class UpdateNote extends Component {
           onChange={this.handleUpdate}
         />
         <textarea
+          rows={10}
           className="text"
           type="text"
           placeholder="text"
