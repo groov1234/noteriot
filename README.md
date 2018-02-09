@@ -1,8 +1,5 @@
 ## An App for Creating and Maintaining Notes
 
-### Basic Form complete and rendered
-#### Must Do's#
-
 ### Completed
 * Add functionality to the form 
 1. Submit 
@@ -15,6 +12,8 @@
 2. Delete button
 
 ##### Extra Features to Add
+
+* Fix CSS naming convention
 
 * Markdown 
 
