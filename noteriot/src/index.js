@@ -16,3 +16,5 @@ let store = createStore(notesReducer, applyMiddleware(thunk, logger))
 ReactDOM.render(
   <Root store={store} />,
   document.getElementById('root'));
+
+  //testing git setup
